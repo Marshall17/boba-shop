@@ -1,47 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header>
+      <nav class="navbar navbar-expand-lg " style="background-color: rgb(228, 209, 194)">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="homepage.html">Home  <img src="images/vecteezy_cute-fox-animal-character-watercolor_13184102_208.png" alt="fox" style="height: 3em;"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="product.html">Menu</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Account
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="registration.html"
+                      >Sign Up</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="signin.html">Sign In</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link payment" href="checkout.html">Checkout</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <button class="btn btn-outline-success" type="submit"><img src="images/cart.png" alt="cart" style="height: 1em;width:1em"> <a href="checkout.html" style="text-decoration: none; color: black;"> Cart </a>
+              </button>
           </div>
         </div>
       </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </header>
+    <main id="main" style="background-color: rgb(228, 209, 194)">
+        <section id="hero" class="hero d-flex align-items-center section-bg">
+            <div class="container">
+              <div class="row justify-content-between gy-5">
+                <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                  <h2 >Grand Opening<br>Delicious Deals</h2>
+                  <p>We offer Boba, Coffee, and Smoothies for you all to enjoy. <br> We also server some delicious deals only on Sundays!</p>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                  <img src="images/vecteezy_cute-cartoon-style-fox-drink-bubble-tea_22584092_76.png" class="img-fluid" alt="Boba">
+                </div>
+              </div>
+            </div>
+          </section>           <!-- ======= Featured Services Section ======= -->
+            <section id="featured-services" class="featured-services">
+              <div class="container">
+        <ul>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="icon-box">
+                      <li><h4 class="title"><a href="registration.html">Sign Up Today</a></h4></li>
+                      <p class="description"> Join us today and get yourself a free drink on the house. This is a limited time event (Limited Offer)</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                    <div class="icon-box">
+                      <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                     <li><h4 class="title"><a href="product.html">Special Deal</a></h4></li>
+                      <p class="description">Get our Boba Milk Tea for only 7$. SAVE yourself 5$!! <img src="images/bubble-tea-ga7872c9a1_640.png" alt="milk-tea" style="height: 3em;width: 3em;"></p>
+                    </div>
+                  </div>
+        
+              </div>
+            </ul>
+            </section><!-- End Featured Services Section -->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
